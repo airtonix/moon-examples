@@ -9,11 +9,5 @@
     "test",
     "dist",
     "**/*spec.ts"
-  ],
-  "files": [
-    "src/main.ts"
-  ],
-  "include": [
-    "src/**/*.ts"
   ]
 }
