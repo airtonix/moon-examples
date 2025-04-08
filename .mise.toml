@@ -1,0 +1,17 @@
+[tools]
+node = "20.13.1"
+pnpm = "8.6.10"
+
+[env]
+mise.file = ".env"                # load vars from a dotenv file
+_.path = [
+    # adds an absolute path
+    "~/.local/share/bin",
+    # adds paths relative to directory in which this file was found (see below for details), not PWD
+    "{{config_root}}/node_modules/.bin",
+    # adds paths relative to the exact file that this is found in (not PWD)
+    "tools/bin",
+]
+MOON_TOOLCHAIN_FORCE_GLOBALS=true
+EDITOR = "code --wait"
+MISE__NUMCPUS = "{{ num_cpus() }}"
