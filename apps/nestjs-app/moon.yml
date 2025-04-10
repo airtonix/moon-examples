@@ -10,11 +10,11 @@ fileGroups:
 
 tasks:
   dev:
-    command: bash -c "cd ../.. && nest start nestjs-app --watch"
+    command: nest start --watch
     
 
   build:
-    command: 'nest build nestjs-app'
+    command: 'nest build'
     inputs:
       - '@group(app)'
       - '@group(sources)'
