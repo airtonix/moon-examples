@@ -16,5 +16,6 @@
     "./.moon/cache/schemas/workspace.json": [
       ".moon/workspace.yml"
     ]
-  }
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

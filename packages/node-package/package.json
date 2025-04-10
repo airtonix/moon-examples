@@ -9,6 +9,9 @@
   "author": "moon",
   "license": "MIT",
   "repository": "https://github.com/moonrepo/examples",
+  "dependencies": {
+    "zod": "3.24.2"
+  },
   "packemon": {
     "format": "lib",
     "platform": "node"

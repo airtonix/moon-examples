@@ -12,6 +12,23 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
-  }
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@company/node-package": [
+        "../../packages/node-package/src/index.ts"
+      ],
+      "@company/node-package/*": [
+        "../../packages/node-package/src/*"
+      ]
+    }
+  },
+  "references": [
+    {
+      "path": "../../packages/node-package"
+    }
+  ],
+  "include": [
+    "./src/**/*",
+    "../../packages/node-package/**/*"
+  ]
 }
